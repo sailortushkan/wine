@@ -2,48 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import * as ROUTES from '../../constants/routes';
+import Logo from '../Logo';
 import SignOutButton from '../SignOut';
 import { AuthUserContext } from '../Session';
+import './index.css';
 
 const Navigation = () => (
-  <div>
+  <header className='header'>
+    <Logo />
     <AuthUserContext.Consumer>
       {authUser =>
         authUser ? <NavigationAuth /> : <NavigationNonAuth />
       }
     </AuthUserContext.Consumer>
-  </div>
+  </header>
 );
 
 const NavigationAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ADMIN}>Admin</Link>
-    </li>
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+  <nav className='nav-container nav-container-auth'>
+    <Link to={ROUTES.HOME} className='nav-link'>Home</Link>
+    <Link to={ROUTES.ACCOUNT} className='nav-link'>Account</Link>
+    <Link to={ROUTES.ADMIN} className='nav-link'>Admin</Link>
+    <SignOutButton />
+  </nav>
 );
 
 const NavigationNonAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-  </ul>
+  <nav className='nav-container nav-container-nonauth'>
+    <Link to={ROUTES.SIGN_IN} className='nav-link'>Sign In</Link>    
+  </nav>
 );
 
 export default Navigation;

@@ -1,0 +1,15 @@
+.logo {
+  color: #000;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-weight: 400;
+  padding-left: 40px;
+}
+
+.logo:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #800020;
+}

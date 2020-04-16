@@ -1,0 +1,36 @@
+.header {
+  box-shadow: 0 5px 20px -10px #000;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-right: 40px;
+}
+
+.nav-container-auth {
+  width: 70%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-weight: 300;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #800020;
+}
