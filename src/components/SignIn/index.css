@@ -1,0 +1,64 @@
+.page-container {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+    ),
+    url("/corks.jpg");
+  background-size: cover;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding-top: 80px;
+  text-align: center;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-weight: 300;
+  color: white;
+  height: 100vh;
+}
+
+.form {
+  background-color: white;
+  width: 300px;
+  margin: 0px auto 0px auto;
+  padding: 20px 0px 20px 0px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+}
+
+.form__input {
+  display: block;
+  width: 80%;
+  margin: 0px auto 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.form__input::placeholder {
+  font-size: 14px;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-weight: 300;
+}
+
+.form__button {
+  background-color: black;
+  border: none;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  display: block;
+  width: 80px;
+  padding: 5px;
+  margin: 0px auto 0px auto;
+}
+
+.form__button:disabled {
+  opacity: 10%;
+}
+
+.signin-error {
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+}
