@@ -11,7 +11,7 @@ import 'typeface-roboto';
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
     <App />
-    </FirebaseContext.Provider>,
+  </FirebaseContext.Provider>,
   document.getElementById('root'),
 );
 serviceWorker.unregister();
