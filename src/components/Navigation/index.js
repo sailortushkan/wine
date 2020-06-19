@@ -22,7 +22,6 @@ const NavigationAuth = () => (
   <nav className='nav-container nav-container-auth'>
     <Link to={ROUTES.HOME} className='nav-link'>Home</Link>
     <Link to={ROUTES.ACCOUNT} className='nav-link'>Account</Link>
-    <Link to={ROUTES.ADMIN} className='nav-link'>Admin</Link>
     <SignOutButton />
   </nav>
 );
