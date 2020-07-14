@@ -39,7 +39,6 @@ class AccountPage extends Component {
         {authUser => (
           <div className='account-container'>
             <h1>Account: {userInfo.username}</h1>
-            { loading && <div> Loading... </div> }
             <div>E-mail: {userInfo.email}</div>
             <PasswordForgetForm />
             <PasswordChangeForm />
